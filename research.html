@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/meglogo.png" >
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <title>Megan Fan's Research</title>
+</head>
+<body>
+
+    <div class="skip"><a tabindex=0 href="#main">Skip to Main Content</a></div>
+
+    <header>
+      <nav>
+        <button class="material-symbols-rounded" id="menu">menu</button>
+        <button class="material-symbols-rounded" id="close">close</button>
+          <ul class="nav-links" id="nav-links">
+            <li class="nav-item"><a tabindex=0 href="index.html">Home</a></li>
+            <li class="nav-item" id="active"><a tabindex=0 href="research.html">Research</a></li>
+            <li class="nav-item"><a tabindex=0 href="visualdesigns.html">Visual Designs</a></li>
+          </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="main">
+
+        <div class="title">
+            <h1>Research</h1>
+            </div>  
+        
+        <div class = "projects">
+
+        <div class="pediatric">
+            <h2>Pediatric Health Communication</h2>
+            <p>University of Michigan School of Information</p>
+            <p>I help my mentor design and conduct scenario-based interviews, design workshops, and discussion activities for kids with chronic illnesses and their parents. We then use the data gathered from these interactions to develop a high fidelity prototype that improves patient to caregiver communication within pediatric healthcare. </p>
+            <div class="research-images">
+                <img class="image" src="images/comicstrip1.png" tabindex=0 onclick="openModal();currentSlide(1)" alt="Comic Strip for Kid: Introducing the Character">
+          
+                <img class="image" src="images/comicstrip2.png" tabindex=0 onclick="openModal();currentSlide(2)" alt="Comic Strip for Kid: Scenario #1">
+           
+                <img class="image" src="images/comicstrip3.png" tabindex=0 onclick="openModal();currentSlide(3)" alt="Comic Strip for Kid: Scenario #2">
+           
+                <img class="image" src="images/comicstrip4.png" tabindex=0 onclick="openModal();currentSlide(4)" alt="Comic Strip for Kid: Scenario #3">
+        
+                <img class="image" src="images/comicstrip5.png" tabindex=0 onclick="openModal();currentSlide(5)" alt="Comic Strip for Kid: Scenario #4">
+           
+                <img class="image" src="images/interviewchild.jpeg" tabindex=0 onclick="openModal();currentSlide(6)" alt="Interview with Child">
+        
+                <img class="image" src="images/interviewparent.png" tabindex=0 onclick="openModal();currentSlide(7)" alt="Interview with Parent">
+            </div>
+        </div>
+
+        <div class="styh">
+            <h2>Speak to Your Health Community Survey</h2>
+            <p>University of Michigan Institute for Social Research</p>
+            <p>I focused on user-centered design principles to build attractive and intuitive interfaces for the Speak to Your Health Community Survey. I also interviewed community partners and summarized community-based participatory research findings through online articles. </p>
+            <div class="research-images">
+                <img class="image" src="images/styhwebsite.png" tabindex=0 onclick="openModal();currentSlide(8)" alt="Image of Speak to Your Health Community Survey Homepage">
+                <img class="image" src="images/researchposter.webp" tabindex=0 onclick="openModal();currentSlide(9)" alt="Image of Speak to Your Health Community Survey Research Poster">
+            </div>
+        </div>
+
+        <!-- lightbox -->
+    <div class="lightbox">
+    <div id="my-modal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="my-slides">
+            <div class="numbertext">1 / 9</div>
+            <img src="images/comicstrip1.png" alt="Comic Strip for Kid: Introducing the Character" style="width:100%">
+          </div>
+      
+          <div class="my-slides">
+            <div class="numbertext">2 / 9</div>
+            <img src="images/comicstrip2.png" alt="Comic Strip for Kid: Scenario #1" style="width:100%">
+          </div>
+      
+          <div class="my-slides">
+            <div class="numbertext">3 / 9</div>
+            <img src="images/comicstrip3.png" alt="Comic Strip for Kid: Scenario #2" style="width:100%">
+          </div>
+      
+          <div class="my-slides">
+            <div class="numbertext">4 / 9</div>
+            <img src="images/comicstrip4.png" alt="Comic Strip for Kid: Scenario #3" style="width:100%">
+          </div>
+
+          <div class="my-slides">
+            <div class="numbertext">5 / 9</div>
+            <img src="images/comicstrip5.png" alt="Comic Strip for Kid: Scenario #4" style="width:100%">
+          </div>
+
+          <div class="my-slides">
+            <div class="numbertext">6 / 9</div>
+            <img src="images/interviewchild.jpeg" alt="Interview with Child" style="width:100%">
+          </div>
+
+          <div class="my-slides">
+            <div class="numbertext">7 / 9</div>
+            <img src="images/interviewparent.png" alt="Interview with Parent" style="width:100%">
+          </div>
+
+          <div class="my-slides">
+            <div class="numbertext">8 / 9</div>
+            <img src="images/styhwebsite.png" alt="Climate Change Banner" style="width:100%">
+          </div>
+
+          <div class="my-slides">
+            <div class="numbertext">9 / 9</div>
+            <img src="images/researchposter.webp" alt="Michigan Esports Valorant Varsity Team Poster" style="width:100%">
+          </div>
+
+          <div class="caption-container">
+            <p id="caption">Caption</p>
+          </div>
+
+          <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    </div>
+</div>
+    </div>
+
+    </main>
+
+    <footer>
+        <p> Megan Fan &copy 2022</p>
+        </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox"></script>
+
+</body>
+
+</html>
